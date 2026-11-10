@@ -1,0 +1,34 @@
+\begin{table}[htbp]
+\centering
+\caption{Coverage and width on both real datasets: random split (best case), temporal split with static calibration (realistic deployment, exchangeability stress test), and temporal split with ACI (the fix).}
+\label{tab:real-data-comparison}
+\begin{tabular}{lllrlrl}
+\toprule
+Dataset & Split & Method & Coverage & Coverage 95\% CI & Width & Width 95\% CI \\
+\midrule
+Medical no-show & Random & Naive parametric & 0.863 & [0.833, 0.887] & 44.208 & [40.9, 47.6] \\
+Medical no-show & Random & DRO (plug-in) & 0.988 & [0.978, 0.995] & 48.532 & [45.0, 52.2] \\
+Medical no-show & Random & DRO (calibrated) & 0.997 & [0.988, 1.000] & 57.385 & [53.4, 61.4] \\
+Medical no-show & Random & Ours (static) & 0.916 & [0.887, 0.949] & 45.136 & [41.8, 48.8] \\
+Medical no-show & Random & Bonferroni & 1.000 & [0.998, 1.000] & 51.562 & [48.0, 55.6] \\
+Medical no-show & Temporal (static) & Naive parametric & 0.749 & [0.718, 0.781] & 47.514 & [44.3, 50.6] \\
+Medical no-show & Temporal (static) & DRO (plug-in) & 0.981 & [0.971, 0.990] & 52.149 & [48.8, 55.8] \\
+Medical no-show & Temporal (static) & DRO (calibrated) & 0.971 & [0.954, 0.984] & 57.456 & [53.9, 60.8] \\
+Medical no-show & Temporal (static) & Ours (static) & 0.709 & [0.631, 0.754] & 47.068 & [44.1, 50.4] \\
+Medical no-show & Temporal (static) & Bonferroni & 1.000 & [1.000, 1.000] & 56.410 & [52.4, 60.9] \\
+Medical no-show & Temporal (ACI) & Ours (ACI) & 0.921 & [0.828, 0.929] & 54.307 & [48.5, 55.7] \\
+Hotel booking & Random & Naive parametric & 0.746 & [0.706, 0.784] & 52.441 & [50.3, 54.8] \\
+Hotel booking & Random & DRO (plug-in) & 0.966 & [0.950, 0.981] & 58.082 & [55.8, 60.5] \\
+Hotel booking & Random & DRO (calibrated) & 0.992 & [0.983, 1.000] & 75.807 & [71.0, 80.2] \\
+Hotel booking & Random & Ours (static) & 0.914 & [0.874, 0.954] & 56.169 & [53.6, 59.1] \\
+Hotel booking & Random & Bonferroni & 1.000 & [1.000, 1.000] & 76.367 & [72.5, 80.2] \\
+Hotel booking & Temporal (static) & Naive parametric & 0.947 & [0.926, 0.966] & 61.256 & [59.0, 63.7] \\
+Hotel booking & Temporal (static) & DRO (plug-in) & 0.992 & [0.983, 0.998] & 67.280 & [64.9, 69.7] \\
+Hotel booking & Temporal (static) & DRO (calibrated) & 1.000 & [0.992, 1.000] & 87.941 & [81.9, 94.4] \\
+Hotel booking & Temporal (static) & Ours (static) & 0.956 & [0.931, 0.979] & 61.585 & [59.1, 64.0] \\
+Hotel booking & Temporal (static) & Bonferroni & 1.000 & [1.000, 1.000] & 84.148 & [80.1, 88.3] \\
+Hotel booking & Temporal (ACI) & Ours (ACI) & 0.893 & [0.906, 0.950] & 58.596 & [57.7, 63.5] \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small\item Nominal target $1-\alpha=0.90$ throughout. 95\% CIs are a two-stage batch-level bootstrap (1{,}000 replicates) for the static rows and a moving-block bootstrap over days (500 replicates) for the ACI rows, capturing calibration- and test-sampling variability around each point estimate from its single train/cal/test split.\end{tablenotes}
+\end{table}

@@ -1,0 +1,10 @@
+Quantity,Value
+$n$ (calibration),544.0
+$n$ (test),694.0
+Mean $R$ (calibration),-0.6466181212255018
+Mean $R$ (test),0.4796740986708073
+Shift $\Delta$,1.126292219896309
+Density $g(\hat q)$,0.1623012570457383
+Predicted coverage,0.7172013569099939
+Observed coverage,0.7089337175792507
+Prediction error (pp),0.8267639330743148

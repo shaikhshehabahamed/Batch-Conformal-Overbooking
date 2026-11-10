@@ -1,0 +1,31 @@
+\begin{table}[htbp]
+\centering
+\caption{Downstream decision-layer outcomes on simulated data across the correlation sweep (30 replications per point, capacity = 85\% of demand).}
+\label{tab:decision-simulation}
+\begin{tabular}{llrrr}
+\toprule
+$\tau$ & Method & Overflow rate & Utilization & Cost \\
+\midrule
+0.000 & Bonferroni & 0.000 & 0.498 & 21.434 \\
+0.000 & DRO (calibrated) & 0.000 & 0.576 & 17.880 \\
+0.000 & DRO (plug-in) & 0.000 & 0.585 & 17.715 \\
+0.000 & Naive parametric & 0.000 & 0.585 & 17.709 \\
+0.000 & Ours & 0.000 & 0.585 & 17.709 \\
+0.500 & Bonferroni & 0.000 & 0.500 & 21.371 \\
+0.500 & DRO (calibrated) & 0.000 & 0.497 & 19.798 \\
+0.500 & DRO (plug-in) & 0.000 & 0.587 & 17.657 \\
+0.500 & Naive parametric & 0.000 & 0.587 & 17.652 \\
+0.500 & Ours & 0.000 & 0.587 & 17.652 \\
+1.200 & Bonferroni & 0.000 & 0.500 & 21.387 \\
+1.200 & DRO (calibrated) & 0.000 & 0.270 & 28.379 \\
+1.200 & DRO (plug-in) & 0.025 & 0.586 & 17.926 \\
+1.200 & Naive parametric & 0.026 & 0.586 & 17.925 \\
+1.200 & Ours & 0.022 & 0.580 & 18.036 \\
+2.000 & Bonferroni & 0.000 & 0.502 & 21.320 \\
+2.000 & DRO (calibrated) & 0.000 & 0.121 & 35.747 \\
+2.000 & DRO (plug-in) & 0.108 & 0.580 & 19.237 \\
+2.000 & Naive parametric & 0.109 & 0.580 & 19.237 \\
+2.000 & Ours & 0.067 & 0.543 & 19.782 \\
+\bottomrule
+\end{tabular}
+\end{table}

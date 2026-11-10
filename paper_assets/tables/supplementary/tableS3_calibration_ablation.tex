@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Calibration ablation on the medical no-show temporal split: incremental fixes vs. the adopted ACI fix.}
+\label{tab:ablation}
+\begin{tabular}{lrr}
+\toprule
+Calibration approach & Coverage & Mean width \\
+\midrule
+static (no adaptation) & 0.709 & 47.068 \\
+rolling calibration only & 0.811 & 48.168 \\
+rolling classifier + calibration & 0.824 & 48.383 \\
+ACI (gamma=0.02, adopted fix) & 0.921 & 54.307 \\
+\bottomrule
+\end{tabular}
+\end{table}

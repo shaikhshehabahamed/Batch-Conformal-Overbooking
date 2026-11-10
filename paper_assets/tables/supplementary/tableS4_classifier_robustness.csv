@@ -1,0 +1,13 @@
+Classifier,Method,Coverage,Width
+Logistic Regression,Naive parametric,0.7492795389048992,47.51391566999112
+Logistic Regression,DRO (plug-in),0.9812680115273776,52.149396761190445
+Logistic Regression,DRO (calibrated),0.9711815561959656,57.45560921114589
+Logistic Regression,Ours (static),0.7089337175792507,47.06822420927596
+Logistic Regression,Bonferroni,1.0,56.410022987077184
+Logistic Regression,Ours (ACI),0.920749279538905,54.307476038190345
+Gradient Boosting,Naive parametric,0.7824207492795389,47.98697038435664
+Gradient Boosting,DRO (plug-in),0.9927953890489912,52.43995074016729
+Gradient Boosting,DRO (calibrated),0.978386167146974,55.62257107649367
+Gradient Boosting,Ours (static),0.877521613832853,48.96417723822167
+Gradient Boosting,Bonferroni,1.0,56.414985590778095
+Gradient Boosting,Ours (ACI),0.8890489913544669,49.76972691182378

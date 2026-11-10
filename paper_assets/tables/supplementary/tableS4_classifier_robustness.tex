@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\caption{Classifier robustness: logistic regression vs. gradient boosting, medical no-show temporal split.}
+\label{tab:classifier-robustness}
+\begin{tabular}{llrr}
+\toprule
+Classifier & Method & Coverage & Width \\
+\midrule
+Logistic Regression & Naive parametric & 0.749 & 47.514 \\
+Logistic Regression & DRO (plug-in) & 0.981 & 52.149 \\
+Logistic Regression & DRO (calibrated) & 0.971 & 57.456 \\
+Logistic Regression & Ours (static) & 0.709 & 47.068 \\
+Logistic Regression & Bonferroni & 1.000 & 56.410 \\
+Logistic Regression & Ours (ACI) & 0.921 & 54.307 \\
+Gradient Boosting & Naive parametric & 0.782 & 47.987 \\
+Gradient Boosting & DRO (plug-in) & 0.993 & 52.440 \\
+Gradient Boosting & DRO (calibrated) & 0.978 & 55.623 \\
+Gradient Boosting & Ours (static) & 0.878 & 48.964 \\
+Gradient Boosting & Bonferroni & 1.000 & 56.415 \\
+Gradient Boosting & Ours (ACI) & 0.889 & 49.770 \\
+\bottomrule
+\end{tabular}
+\end{table}

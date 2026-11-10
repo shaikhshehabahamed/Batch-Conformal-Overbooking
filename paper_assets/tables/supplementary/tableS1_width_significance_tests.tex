@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\caption{Paired Wilcoxon significance tests: our method's width vs. Bonferroni and DRO-calibrated, across 50 matched replications per $\tau$, plus a two-sided check against naive parametric at $\tau=0$ (the one point where naive is itself still valid).}
+\label{tab:width-tests}
+\begin{tabular}{llrrrr}
+\toprule
+$\tau$ & Comparison & Mean diff. (width) & 95\% CI lo & 95\% CI hi & Wilcoxon $p$ \\
+\midrule
+0.000 & ours vs bonferroni & -21.270 & -21.441 & -21.099 & 0.000 \\
+0.000 & ours vs dro\_calib & -5.073 & -5.242 & -4.904 & 0.000 \\
+0.000 & ours vs naive & 0.016 & -0.067 & 0.099 & 0.818 \\
+0.500 & ours vs bonferroni & -18.502 & -18.841 & -18.162 & 0.000 \\
+0.500 & ours vs dro\_calib & -9.432 & -9.830 & -9.035 & 0.000 \\
+1.200 & ours vs bonferroni & -12.521 & -13.099 & -11.942 & 0.000 \\
+1.200 & ours vs dro\_calib & -17.298 & -17.995 & -16.602 & 0.000 \\
+2.000 & ours vs bonferroni & -7.405 & -8.050 & -6.759 & 0.000 \\
+2.000 & ours vs dro\_calib & -24.213 & -24.977 & -23.449 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

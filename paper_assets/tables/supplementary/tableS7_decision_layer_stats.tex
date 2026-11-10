@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\caption{Significance tests for the simulated decision-layer results: paired Wilcoxon tests (overflow rate and cost comparisons) and one-sample $t$-tests (overflow rate vs.\ the 10\% target, $\tau=2.0$).}
+\label{tab:decision-stats}
+\begin{tabular}{llrrrr}
+\toprule
+$\tau$ & Comparison & Mean diff. & 95\% CI lo & 95\% CI hi & $p$ \\
+\midrule
+0.000 & overflow ours vs naive & 0.000 & 0.000 & 0.000 & 1.000 \\
+0.000 & overflow ours vs dro\_plugin & 0.000 & 0.000 & 0.000 & 1.000 \\
+0.500 & overflow ours vs naive & 0.000 & 0.000 & 0.000 & 1.000 \\
+0.500 & overflow ours vs dro\_plugin & 0.000 & 0.000 & 0.000 & 1.000 \\
+1.200 & overflow ours vs naive & -0.004 & -0.006 & -0.002 & 0.000 \\
+1.200 & overflow ours vs dro\_plugin & -0.003 & -0.005 & -0.002 & 0.001 \\
+2.000 & overflow ours vs naive & -0.041 & -0.051 & -0.032 & 0.000 \\
+2.000 & overflow ours vs dro\_plugin & -0.041 & -0.050 & -0.031 & 0.000 \\
+2.000 & naive overflow vs 10\% target & 0.009 & 0.094 & 0.123 & 0.119 \\
+2.000 & dro\_plugin overflow vs 10\% target & 0.008 & 0.094 & 0.123 & 0.138 \\
+2.000 & ours overflow vs 10\% target & -0.033 & 0.059 & 0.076 & 1.000 \\
+2.000 & cost ours vs naive & 0.545 & 0.425 & 0.664 & 0.000 \\
+2.000 & cost ours vs dro\_plugin & 0.545 & 0.426 & 0.664 & 0.000 \\
+2.000 & cost ours vs bonferroni & -1.538 & -1.843 & -1.232 & 0.000 \\
+2.000 & cost ours vs dro\_calib & -15.966 & -16.686 & -15.245 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\caption{Downstream overbooking decision on the medical no-show dataset: realized outcomes swept across three capacity levels (fraction of each batch's historical demand).}
+\label{tab:decision-layer-real-data}
+\begin{tabular}{llrrrr}
+\toprule
+Capacity & Method & Overflow rate & Utilization & Mean N booked & Cost \\
+\midrule
+0.700 & Bonferroni & 0.000 & 0.817 & 41.270 & 7.490 \\
+0.700 & DRO (calibrated) & 0.023 & 0.466 & 37.287 & 11.489 \\
+0.700 & DRO (plug-in) & 0.014 & 0.767 & 43.468 & 6.131 \\
+0.700 & Naive parametric & 0.152 & 0.888 & 48.365 & 4.541 \\
+0.700 & Ours (ACI) & 0.042 & 0.715 & 41.439 & 8.359 \\
+0.850 & Bonferroni & 0.000 & 0.811 & 50.084 & 9.234 \\
+0.850 & DRO (calibrated) & 0.009 & 0.519 & 47.594 & 11.388 \\
+0.850 & DRO (plug-in) & 0.011 & 0.787 & 53.507 & 6.591 \\
+0.850 & Naive parametric & 0.118 & 0.893 & 57.873 & 4.207 \\
+0.850 & Ours (ACI) & 0.029 & 0.737 & 50.968 & 8.860 \\
+0.950 & Bonferroni & 0.000 & 0.811 & 56.000 & 10.413 \\
+0.950 & DRO (calibrated) & 0.000 & 0.537 & 52.287 & 13.386 \\
+0.950 & DRO (plug-in) & 0.002 & 0.781 & 57.630 & 9.110 \\
+0.950 & Naive parametric & 0.009 & 0.843 & 58.851 & 8.149 \\
+0.950 & Ours (ACI) & 0.005 & 0.730 & 55.024 & 11.183 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small\item Cost $= 3\times$ mean overflow amount $+\ 1\times$ mean idle slots (arbitrary relative units).\end{tablenotes}
+\end{table}

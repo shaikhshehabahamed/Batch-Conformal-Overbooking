@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering
+\caption{Coverage and width across the within-batch correlation sweep (50 replications per point; nominal target $1-\alpha=0.90$).}
+\label{tab:simulation-sweep}
+\begin{tabular}{llrlrl}
+\toprule
+$\tau$ & Method & Coverage & Coverage 95\% CI & Width & Width 95\% CI \\
+\midrule
+0.000 & Ours & 0.892 & [0.883, 0.900] & 28.552 & [28.3, 28.8] \\
+0.000 & Bonferroni & 1.000 & [1.000, 1.000] & 49.822 & [49.5, 50.2] \\
+0.000 & DRO (plug-in) & 0.999 & [0.998, 0.999] & 33.425 & [33.1, 33.8] \\
+0.000 & DRO (calibrated) & 0.997 & [0.996, 0.999] & 33.625 & [33.3, 34.0] \\
+0.000 & Naive parametric & 0.892 & [0.885, 0.899] & 28.536 & [28.3, 28.8] \\
+0.500 & Ours & 0.901 & [0.894, 0.907] & 31.321 & [30.9, 31.7] \\
+0.500 & Bonferroni & 1.000 & [1.000, 1.000] & 49.823 & [49.5, 50.2] \\
+0.500 & DRO (plug-in) & 0.958 & [0.954, 0.963] & 33.521 & [33.2, 33.9] \\
+0.500 & DRO (calibrated) & 0.997 & [0.996, 0.998] & 40.753 & [40.0, 41.5] \\
+0.500 & Naive parametric & 0.770 & [0.761, 0.779] & 28.577 & [28.3, 28.8] \\
+1.200 & Ours & 0.904 & [0.897, 0.911] & 37.303 & [36.7, 38.0] \\
+1.200 & Bonferroni & 1.000 & [1.000, 1.000] & 49.824 & [49.5, 50.2] \\
+1.200 & DRO (plug-in) & 0.822 & [0.812, 0.832] & 33.845 & [33.5, 34.2] \\
+1.200 & DRO (calibrated) & 0.999 & [0.998, 0.999] & 54.601 & [53.3, 55.9] \\
+1.200 & Naive parametric & 0.647 & [0.637, 0.656] & 28.717 & [28.5, 28.9] \\
+2.000 & Ours & 0.904 & [0.898, 0.910] & 42.419 & [41.7, 43.1] \\
+2.000 & Bonferroni & 0.998 & [0.998, 0.999] & 49.824 & [49.5, 50.2] \\
+2.000 & DRO (plug-in) & 0.730 & [0.721, 0.740] & 34.240 & [34.0, 34.5] \\
+2.000 & DRO (calibrated) & 1.000 & [1.000, 1.000] & 66.633 & [65.3, 68.0] \\
+2.000 & Naive parametric & 0.593 & [0.584, 0.601] & 28.886 & [28.7, 29.1] \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small\item 95\% CIs computed via the normal approximation across replications.\end{tablenotes}
+\end{table}

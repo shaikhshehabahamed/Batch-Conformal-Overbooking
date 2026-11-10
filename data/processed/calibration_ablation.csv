@@ -1,0 +1,5 @@
+method,coverage,mean_width
+static (no adaptation),0.7089337175792507,47.06822420927596
+rolling calibration only,0.8112391930835735,48.16773718014332
+rolling classifier + calibration,0.8242074927953891,48.38273645945627
+"ACI (gamma=0.02, adopted fix)",0.920749279538905,54.307476038190345
